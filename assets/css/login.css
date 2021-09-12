@@ -1,0 +1,110 @@
+/* Navbar */
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand {
+	font-family: Chapaza;
+	font-size: 25px;
+}
+
+/* Jumbotron */
+.jumbotron {
+	background-image: url(../image/masjid.jpg);
+	background-size: cover;
+	height: 540px;
+	font-size: 65px;
+	position: relative;
+}
+
+.jumbotron .container {
+	z-index: 1;
+	position: relative;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	padding: 40px;
+	color: white;
+	font-family: Chapaza;
+	border-radius: 12px;
+	margin-top: 50px;
+}
+
+.jumbotron .container .form-group {
+	font-family: Calibri;
+}
+
+.jumbotron .container hr {
+	color: white;
+}
+
+.jumbotron button {
+	width: 48%;
+}
+
+.jumbotron::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 90%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	position: absolute;
+	bottom: 0;
+}
+
+/* about */
+.about {
+	background-color: #102128;
+	margin-top: 79px;
+	color: white;
+}
+
+.about .container {
+	width: 100%;
+	padding: 40px;
+}
+
+.about .container footer .col-lg-6 .col-md-6 .col-sm-12 .col-xd-12 {
+	font-family: Calibri;
+	color: #eee;
+}
+
+.icon i.fa.fa-youtube-play {
+	margin-left: 17px;
+}
+
+/* copyright */
+.copyright {
+	color: rgb(40, 78, 94);
+	background-color: #fcfcfc;
+	font-size: 12px;
+}
+
+/* desktop version */
+@media (min-width: 992px) {
+	.navbar-brand,
+	.nav-link {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid #017ed9;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -75px;
+		height: 640px;
+	}
+	.jumbotron .container {
+		width: 30%;
+		margin-top: 100px;
+	}
+}

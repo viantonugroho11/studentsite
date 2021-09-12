@@ -1,0 +1,72 @@
+/* Navbar */
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand {
+	font-family: Chapaza;
+	font-size: 25px;
+}
+.navbar-nav .ml-auto {
+	color: black;
+}
+
+/* Berita */
+.row .berita .mb-5 {
+	margin-top: 50px;
+	box-shadow: 0 3px 20px rgba(51, 50, 50, 0.5);
+	border-radius: 5px;
+}
+h1 {
+	font-family: chapaza;
+}
+img {
+	width: 100%;
+}
+
+/* about */
+.about {
+	background-color: #102128;
+	margin-top: 10px;
+	color: white;
+}
+.about .container {
+	width: 150%;
+	padding: 100px;
+}
+.about .container footer .col-lg-6 .col-md-6 .col-sm-12 .col-xd-12 {
+	font-family: Calibri;
+	color: #eee;
+}
+
+/* copyright */
+.copyright {
+	color: rgb(40, 78, 94);
+	background-color: #0f1517;
+	font-size: 12px;
+}
+/* desktop version */
+@media (min-width: 992px) {
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.card .img .col-md-6 {
+		width: 220%;
+	}
+
+	.nav-link:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid #017ed9;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	/*card*/
+	.row .col-md-4 .card {
+		width: 50rem;
+	}
+}
