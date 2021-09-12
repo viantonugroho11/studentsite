@@ -37,15 +37,16 @@ class Page extends CI_Controller
         if ($this->form_validation->run() == FALSE) {
             $this->pendaftaran();
 
+
             // var_dump($this->input->post()); die;
         } else {
             /* JIKA FORM BERNILAI SEBALIKNYA MAKA LANJUTKAN */
             $pass = password_hash($this->input->post('password'), PASSWORD_DEFAULT);
             $data = [
                 'pendaftaran'       =>    $this->input->post('pendaftaran'),
-                'nama_santrib'      =>    $this->input->post('nama_santri'),
-                'wali_santri_ayahb' =>    $this->input->post('wali_santri_ayah'),
-                'walisantri_ibub'   =>    $this->input->post('walisantri_ibu'),
+                'nama_santrib'      =>    $this->input->post('nama'),
+                'wali_santri_ayahb' =>    $this->input->post('wali_santri_ayahb'),
+                'walisantri_ibub'   =>    $this->input->post('walisantri_ibub'),
                 'pekerjaan_ortub'   =>    $this->input->post('pekerjaan_ortu'),
                 'lain_lainb'        =>    $this->input->post('lain_lainb'),
                 'no_hpb'            =>    $this->input->post('no_hp'),
@@ -66,7 +67,7 @@ class Page extends CI_Controller
                 'darib'             =>    $this->input->post('dari'),
                 'penghasilan_ortub' =>    $this->input->post('penghasilan_ortu'),
                 'lulusanb'          =>    $this->input->post('lulusan'),
-                'asal_schoolb'      =>    $this->input->post('asal_school'),
+                'asal_schoolb'      =>    $this->input->post('asal_schoolb'),
                 'is_newb'           =>    1,
                 'registeredb'       =>    date('Y-m-d H:i:s'),
 
