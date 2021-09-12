@@ -45,7 +45,7 @@
                 <?php echo form_error('NISNb', '<small class="text-danger">', '</small>'); ?>
             </div>
 
-            
+
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input required type="text" class="form-control" name="nama" id="nama" value="<?= set_value('nama_santrib') ?>" placeholder="Masukkan nama">
@@ -126,6 +126,7 @@
                     <option>Pedagang</option>
                     <option>Petani</option>
                     <option>Sopir</option>
+                    
                     <option>Lain-lain</option>
                 </datalist>
                 <?php echo form_error('pekerjaan_ortub', '<small class="text-danger">', '</small>'); ?> &nbsp; &nbsp;
